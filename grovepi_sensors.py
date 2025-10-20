@@ -29,7 +29,7 @@ while True:
         if object_present:
                 top_line = str(threshold) + " OBJ PRES"
         else:
-            top_line = str(threshold)
+            top_line = str(threshold) + "           "
 
         bottom_line = str(distance)
         setText_norefresh(top_line + "\n" + bottom_line)
