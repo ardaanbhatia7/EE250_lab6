@@ -17,16 +17,16 @@ while True:
   try:
     # TODO:read distance value from Ultrasonic Ranger and print distance on LCD
 
-	distance = grovepi.ultrasonicRead(ultrasonic_ranger)  
+        distance = grovepi.ultrasonicRead(ultrasonic_ranger)  
 
     # TODO: read threshold from potentiometer
 
-	threshold = grovepi.analogRead(potentiometer)
+        threshold = grovepi.analogRead(potentiometer)
         object_present = distance < threshold
     
     # TODO: format LCD text according to threshhold
 
-	if object_present:
+        if object_present:
             top_line = f"{threshold} OBJ PRES"
         else:
             top_line = f"{threshold}"
