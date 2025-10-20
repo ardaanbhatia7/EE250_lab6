@@ -27,14 +27,12 @@ while True:
     # TODO: format LCD text according to threshhold
 
         if object_present:
-            top_line = f"{threshold} OBJ PRES"
+                top_line = str(threshold) + " OBJ PRES"
         else:
-            top_line = f"{threshold}"
+            top_line = str(threshold)
 
-        bottom_line = f"{distance}"
-
-        setText_norefresh(f"{top_line}\n{bottom_line}")
-
+        bottom_line = str(distance)
+        setText_norefresh(top_line + "\n" + bottom_line)
         time.sleep(0.1)  
     
   except IOError:
