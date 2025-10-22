@@ -12,25 +12,25 @@ Suppose you just cloned a repository that included one Python file `my_first_fil
 ```python
 print("Hello World")
 ```
-# 1. Clone the repository
+### 1. Clone the repository
 git clone git@github.com:my-name/my-imaginary-repo.git
 
-# 2. Move into the repository directory
+### 2. Move into the repository directory
 cd my-imaginary-repo
 
-# 3. Create a new Python file
+### 3. Create a new Python file
 touch my_second_file.py
 
-# 4. Add the code to the file
+### 4. Add the code to the file
 echo 'print("Hello World")' > my_second_file.py
 
-# 5. Stage the new file
+### 5. Stage the new file
 git add my_second_file.py
 
-# 6. Commit the change
+### 6. Commit the change
 git commit -m "Add my_second_file.py with Hello World print statement"
 
-# 7. Push the change to GitHub
+### 7. Push the change to GitHub
 git push origin main
 
 
@@ -98,5 +98,3 @@ If text appears, your wiring and I²C configuration are correct.
 
 5. Recheck physical connections
 - Make sure the LCD is connected to the I2C port (not digital or analog).
-
-Expand the path in your script using:
